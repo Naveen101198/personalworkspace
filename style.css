@@ -1,0 +1,80 @@
+            body {
+                background-color: #FFDA85;
+            }
+            h1 {
+                color: #FF5733;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: Bitcount Prop Single, sans-serif;
+                font-weight: 100;
+            }
+            blockquote {
+                font-style: italic;
+                text-align: center;
+                color: #cd1515;
+                border: #000000 2px solid;
+            }
+        
+            img{
+                padding: 4px;
+                border: 2px solid #000000;
+                border-radius: 8px;
+            }
+            h2 {
+                color: #FF5733;
+                text-transform: uppercase;
+                font-family: Bitcount Prop Single, sans-serif;
+                font-weight: 100;
+            }
+            h3{
+                color: #FF5733;
+                text-transform: uppercase;
+                font-family: Bitcount Prop Single, sans-serif;
+                font-weight: 100;
+            }     
+            h4 {
+                color: #FF5733;
+                text-transform: uppercase;
+                font-family: Bitcount Prop Single, sans-serif;
+                font-weight: 100;
+            }  
+            .container {
+                width: 50%;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+            } 
+            img {
+                max-width: 100%;
+                height: auto;
+            }   
+            @media (max-width: 600px) {
+                body {
+                    background-color: #6f16d4;
+                }
+                h1, h2, h3, h4 {
+                    font-size: 20px;
+                }
+                blockquote {
+                    font-size: 16px;
+                }
+                .container {
+                    display: flex;
+                    width: 90%;
+                    padding: 10px;
+                }
+            }
+            .fancy-button {
+    background-color: beige;
+    color: black;
+    padding: 10px 20px;
+    border: olivedrab 2px solid;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(58, 44, 44, 0.1);
+}

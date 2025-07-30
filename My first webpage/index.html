@@ -2,33 +2,19 @@
 <html>
     <head>
         <title>Naveen's portfolio</title>
-        <style>
-            body {
-                background-color: #FFDA85;
-            }
-            h1 {
-                color: #FF5733;
-                text-transform: uppercase;
-                text-align: center;
-                font-family: Bitcount Prop Single, sans-serif;
-                font-weight: 100;
-            }
-            blockquote {
-                font-style: italic;
-                text-align: center;
-                color: #cd1515;
-            }
-        
-            img{
-                padding: 4px;
-                border: 2px solid #000000;
-                border-radius: 8px;
-            }
-        </style>
+        <link rel="shortcut icon" href="Favicon.png.jpg" type="image/png">
+        <link rel = "stylesheet"
+        href="style.css">
         <h1>
             Hello !! I'm Naveen welcome to my portfolio
         </h1>
-         <blockquote style="font-size: 50px;">
+        <button id="click button">My Automation QA</button>
+        <p id="message"></p>
+
+        <button id="resetButton" class ="fancy-button"> Reset!</button>
+        <p id="resetdone"></p>
+
+         <blockquote>
          "I'm a cool coder" - Naveen
          </blockquote>
         <p>
@@ -36,14 +22,31 @@
             My expertise lies in developing Python and Selenium scripts to streamline workflows and minimize manual tasks.
             I'm passionate about creating scalable automation solutions that improve efficiency and deliver real value to businesses.
         </p>
-        <h2>My skillset</h2>
+        <div
+        class="container">
+        <h2>My skillset:</h2>
         <ul>
             <li>python</li>
             <li>selenium</li>
             <li>BDD</li>
             <li>automation</li>
         </ul>
-        <h3>My hobbies</h3>
+    </div>
+        <h3>My PROJECT DETAILS:</h3>
+        <br>
+        <small style="display: block; font-size: 115%;">Tata Consultancy Services</small>
+        <br>
+        <small style="display: block; font-size: 95%;">Responsibilities:</small>
+        <br>
+        
+            <li>Involved in the automation test planning, feasibility analysis, Framework Development, Test execution and
+                defect management.<li>
+            <li>Developed and executed automated test scriptsto enhance testing efficiency using Selenium WebDriver.<li>
+            <li>Tracked, prioritized, and organized defects with Azure DevOps by working with development team to
+                facilitate timely corrections.<li>
+            <li>Implementing a pipeline to schedule jobs for every release, guaranteeing a bug-free deployment.<li>
+            <li>Engaging in parallel efforts for visual testing and mobile (IOS/Android) testing using Sauce labs.<li>
+        <h4>My Hobbies:</h4>
         <ol>
             <li>watching movies</li>
             <li>playing cricket</li>
@@ -53,8 +56,37 @@
             <li>first check my profile!!</li>
         </ul>
         <!-- This is my link section! -->    
-        <a href="https://github.com" target="_blank">visit my site</a>
+        <a href="https://www.linkedin.com/in/donthramoni-naveen-mudiraj-412790368?original_referer=" target="_blank">visit my linkedin profile by clicking this link</a>
         <br>
-        <img src="https://miro.medium.com/v2/resize:fit:1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" alt="github">     
+        <img src="https://miro.medium.com/v2/resize:fit:1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" alt="github">
+        <script>
+            let btn = document.getElementById("click button");
+            let message = document.getElementById("message");
+            btn.addEventListener("click", function() {
+                message.textContent = "Dedicated and results-driven in automation testing professional with 3+ years of hands-on experience in designing,implementing, and executing automated test suites for web applications. Adept at analysing requirements, identifying test scenarios, and implementing automated testing solutions to improve efficiency and reduce manual effort.";
+                message.style.color = "#701C0C";
+                message.style.textAlign = "center";
+            });
+            let resetButton = document.getElementById("resetButton");
+            let resetMessage= document.getElementById("message");
+
+
+            if (sessionStorage.getItem("resetsuccess")==="true") {
+                resetMessage.innerHTML= "page has been reset successfully";
+                resetMessage.style.color = "green";
+                sessionStorage.removeItem("resetsuccess");
+            }
+            resetButton.addEventListener("click", function() {
+                if (confirm("Are you sure you want to reset the message?")) {
+                    sessionStorage.setItem("resetsuccess","true");
+                    resetMessage.innerHTML = "page has been reset succesfully";
+                    resetMessage.style.color = "green";
+                } else {
+                    resetMessage.innerHTML = "Reset cancelled";
+                    resetMessage.style.color = "red";
+                }
+                location.reload();
+            });
+        </script>     
     </head>
 </html>
