@@ -1,4 +1,4 @@
-            body {
+body {
                 background-color: #FFDA85;
             }
             h1 {
@@ -8,11 +8,12 @@
                 font-family: Bitcount Prop Single, sans-serif;
                 font-weight: 100;
             }
+
             blockquote {
                 font-style: italic;
                 text-align: center;
                 color: #cd1515;
-                border: #000000 2px solid;
+                border: #000000 5px solid;
             }
         
             img{
@@ -26,7 +27,7 @@
                 font-family: Bitcount Prop Single, sans-serif;
                 font-weight: 100;
             }
-            h3{
+            h3 {
                 color: #FF5733;
                 text-transform: uppercase;
                 font-family: Bitcount Prop Single, sans-serif;
@@ -37,7 +38,15 @@
                 text-transform: uppercase;
                 font-family: Bitcount Prop Single, sans-serif;
                 font-weight: 100;
-            }  
+            } 
+           h5 {
+                color: #FF5733;
+                text-transform: uppercase;
+                font-family: Bitcount Prop Single, sans-serif;
+                font-weight: 100;
+            } 
+
+               
             .container {
                 width: 50%;
                 margin: auto;
@@ -52,7 +61,7 @@
                 body {
                     background-color: #6f16d4;
                 }
-                h1, h2, h3, h4 {
+                h1, h2, h3, h4, h5 {
                     font-size: 20px;
                 }
                 blockquote {
@@ -64,6 +73,8 @@
                     padding: 10px;
                 }
             }
+                      /* FANCY BUTTONS */
+
             .fancy-button {
     background-color: beige;
     color: black;
@@ -78,3 +89,18 @@
     transition: background-color 0.5s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(58, 44, 44, 0.1);
 }
+
+          .fancy-button:hover {
+            background-color: #afdce6;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(58, 44, 44, 0.2);}
+
+            .fancy-button:active {
+            background-color: #d1e7f0;
+            transform: scale(0.95);
+            box-shadow: 0 4px 6px rgba(58, 44, 44, 0.1);
+            }
+
+            .fancy-button:focus {
+            outline: none;    
+        }

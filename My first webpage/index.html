@@ -3,25 +3,35 @@
     <head>
         <title>Naveen's portfolio</title>
         <link rel="shortcut icon" href="Favicon.png.jpg" type="image/png">
+
         <link rel = "stylesheet"
         href="style.css">
+
+      </head>
+
+       <body>
         <h1>
             Hello !! I'm Naveen welcome to my portfolio
         </h1>
-        <button id="click button">My Automation QA</button>
+
+        <button id="clickButton" class ="fancy-button"> My Automation QA</button>
         <p id="message"></p>
 
         <button id="resetButton" class ="fancy-button"> Reset!</button>
-        <p id="resetdone"></p>
+        <p id="resetDone"></p>
 
+         <br>
          <blockquote>
          "I'm a cool coder" - Naveen
          </blockquote>
+         <br>
+
         <p>
             Welcome to my page! I'm a Software Engineer specializing in automation, particularly for chocolate industry websites.
             My expertise lies in developing Python and Selenium scripts to streamline workflows and minimize manual tasks.
             I'm passionate about creating scalable automation solutions that improve efficiency and deliver real value to businesses.
         </p>
+
         <div
         class="container">
         <h2>My skillset:</h2>
@@ -32,35 +42,36 @@
             <li>automation</li>
         </ul>
     </div>
+
         <h3>My PROJECT DETAILS:</h3>
-        <br>
-        <small style="display: block; font-size: 115%;">Tata Consultancy Services</small>
-        <br>
-        <small style="display: block; font-size: 95%;">Responsibilities:</small>
-        <br>
         
             <li>Involved in the automation test planning, feasibility analysis, Framework Development, Test execution and
-                defect management.<li>
-            <li>Developed and executed automated test scriptsto enhance testing efficiency using Selenium WebDriver.<li>
+                defect management.</li>
+            <li>Developed and executed automated test scriptsto enhance testing efficiency using Selenium WebDriver.</li>
             <li>Tracked, prioritized, and organized defects with Azure DevOps by working with development team to
-                facilitate timely corrections.<li>
-            <li>Implementing a pipeline to schedule jobs for every release, guaranteeing a bug-free deployment.<li>
-            <li>Engaging in parallel efforts for visual testing and mobile (IOS/Android) testing using Sauce labs.<li>
+                facilitate timely corrections.</li>
+            <li>Implementing a pipeline to schedule jobs for every release, guaranteeing a bug-free deployment.</li>
+            <li>Engaging in parallel efforts for visual testing and mobile (IOS/Android) testing using Sauce labs.</li>
+
         <h4>My Hobbies:</h4>
         <ol>
             <li>watching movies</li>
             <li>playing cricket</li>
             <li>reading books</li>
         </ol>
-        <ul>
-            <li>first check my profile!!</li>
-        </ul>
+
+        <h5> Check out my profile! </h5>
+
         <!-- This is my link section! -->    
-        <a href="https://www.linkedin.com/in/donthramoni-naveen-mudiraj-412790368?original_referer=" target="_blank">visit my linkedin profile by clicking this link</a>
+
+        <a href="https://www.linkedin.com/in/donthramoni-naveen-mudiraj-412790368?original_referer=" target="_blank">visit my LinkedIn profile by clicking this link</a>
         <br>
-        <img src="https://miro.medium.com/v2/resize:fit:1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" alt="github">
+        <img src="https://miro.medium.com/v2/resize:fit:1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" alt="GitHub">
+
+        <!-- JAVASCRIPT! -->
+
         <script>
-            let btn = document.getElementById("click button");
+            let btn = document.getElementById("clickButton");
             let message = document.getElementById("message");
             btn.addEventListener("click", function() {
                 message.textContent = "Dedicated and results-driven in automation testing professional with 3+ years of hands-on experience in designing,implementing, and executing automated test suites for web applications. Adept at analysing requirements, identifying test scenarios, and implementing automated testing solutions to improve efficiency and reduce manual effort.";
@@ -68,7 +79,7 @@
                 message.style.textAlign = "center";
             });
             let resetButton = document.getElementById("resetButton");
-            let resetMessage= document.getElementById("message");
+            let resetMessage= document.getElementById("resetDone");
 
 
             if (sessionStorage.getItem("resetsuccess")==="true") {
@@ -88,5 +99,5 @@
                 location.reload();
             });
         </script>     
-    </head>
+    </body>
 </html>
